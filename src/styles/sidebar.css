@@ -41,10 +41,16 @@
     padding: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu-item:hover {
     background-color: #2e2e2e;
+}
+
+.menu-item:active{
+    color: rgba(249, 249, 249, 0.58);
 }
 
 .icon {

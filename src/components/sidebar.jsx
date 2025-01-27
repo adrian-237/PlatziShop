@@ -1,4 +1,5 @@
-import  { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -10,23 +11,18 @@ const Sidebar = () => {
             onMouseLeave={() => setIsHovered(false)}
         >
             <div className="logo">🚀</div>
-
             <ul className="menu">
-                <li className="menu-item">
+                <Link to="/" className="menu-item">
                     <span className="icon"><i className="fa-solid fa-house"></i></span>
                     {isHovered && <span className="label">Home</span>}
-                </li>
-                <li className="menu-item">
+                </Link>
+                <Link to="/products" className="menu-item">
                     <span className="icon"><i className="fa-solid fa-dollar-sign"></i></span>
                     {isHovered && <span className="label">Products</span>}
-                </li>
+                </Link>
                 <li className="menu-item">
                     <span className="icon"><i className="fa-solid fa-cart-shopping"></i></span>
                     {isHovered && <span className="label">Shopping Cart</span>}
-                </li>
-                <li className="menu-item">
-                    <span className="icon"><i className="fa-solid fa-house"></i></span>
-                    {isHovered && <span className="label">Home</span>}
                 </li>
             </ul>
         </div>
