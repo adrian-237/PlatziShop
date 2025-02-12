@@ -13,6 +13,7 @@
     transition: width 0.3s ease;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 100;
 }
 
 .sidebar.hovered {
