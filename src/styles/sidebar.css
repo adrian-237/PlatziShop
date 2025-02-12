@@ -13,6 +13,7 @@
     transition: width 0.3s ease;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 10;
 }
 
 .sidebar.hovered {
@@ -35,6 +36,8 @@
     width: 100%;
 }
 
+
+
 .menu-item {
     display: flex;
     align-items: center;
@@ -55,9 +58,13 @@
 
 .icon {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .label {
     margin-left: 15px;
     font-size: 1rem;
+    text-wrap: nowrap;
 }
