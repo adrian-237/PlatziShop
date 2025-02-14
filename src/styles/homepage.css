@@ -202,3 +202,9 @@ body {
         transform: translateY(0) rotate(0deg);
     }
 }
+
+@media (max-width: 800px) {
+    .info-section{
+        flex-direction: column;
+    }
+}

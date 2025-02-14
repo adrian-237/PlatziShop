@@ -68,3 +68,9 @@
     font-size: 1rem;
     text-wrap: nowrap;
 }
+
+@media (max-width: 800px) {
+    .sidebar-placeholder{
+        width: 10px;
+    }
+}

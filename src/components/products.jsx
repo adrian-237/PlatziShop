@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import ProductCard from "./product-card.jsx";
 import ProductSection from "./product-section.jsx";
 
@@ -36,12 +36,6 @@ function Products() {
         setCategory(e.target.value);
     };
 
-    const closeFilterPopup = () => {
-        setFilterStates({
-            price: false,
-            category: false
-        });
-    };
 
     const buildQueryParams = () => {
         let query = '';
@@ -94,6 +88,7 @@ function Products() {
     return (
         <div className="container">
             <div className="products-section__header">
+
                 <h1>Product List</h1>
                 <form>
                     <input
